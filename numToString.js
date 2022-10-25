@@ -171,9 +171,9 @@ const numtoString = (integer) => {
         joinStr1 = divByTen(joinStr1)
       }
       if (parseInt(joinStr2, 10) % 10 !== 0) {
-        if (joinStr1 !== '11' && joinStr1 !== '12' && joinStr1 !== '13'
-        && joinStr1 !== '14' && joinStr1 !== '15' && joinStr1 !== '16'
-        && joinStr1 !== '17' && joinStr1 !== '18' && joinStr1 !== '19') {
+        if (joinStr2 !== '11' && joinStr2 !== '12' && joinStr2 !== '13'
+        && joinStr2 !== '14' && joinStr2 !== '15' && joinStr2 !== '16'
+        && joinStr2 !== '17' && joinStr2 !== '18' && joinStr2 !== '19') {
           newNum = Math.floor(parseInt(joinStr2, 10) / 10) * 10
           joinStr2 = `${divByTen(newNum.toString())} ${numList(numStr[4], numStr.length)}`
         } else {
@@ -235,5 +235,5 @@ const numtoString = (integer) => {
   return finalStr
 }
 
-console.log(numtoString(0))
+console.log(numtoString(11111))
 
